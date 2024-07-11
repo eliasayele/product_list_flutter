@@ -18,7 +18,10 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicator> {
   final _pageController = PageController();
   @override
   void initState() {
-    _slides = List.generate(images.length, (image) => Image.asset(images[image], fit: BoxFit.fill, width: double.infinity));
+    _slides = List.generate(
+        images.length,
+        (image) => Image.asset(images[image],
+            fit: BoxFit.fill, width: double.infinity));
     super.initState();
   }
 
@@ -48,9 +51,15 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicator> {
                 child: SmoothPageIndicator(
                   controller: _pageController,
                   count: 3,
-                  effect: const ExpandingDotsEffect(activeDotColor: Colors.white, dotColor: Colors.white70, dotHeight: 8, dotWidth: 10),
+                  effect: const ExpandingDotsEffect(
+                      activeDotColor: Colors.white,
+                      dotColor: Colors.white70,
+                      dotHeight: 8,
+                      dotWidth: 10),
                   onDotClicked: (index) {
-                    _pageController.animateToPage(index, duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
+                    _pageController.animateToPage(index,
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeOut);
                   },
                 ),
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:porductlist/main.dart';
 import 'package:porductlist/presentation/widgets/carousel.dart';
 import 'package:porductlist/presentation/widgets/gradient_text_field.dart';
 import 'package:porductlist/presentation/widgets/horizontal_avatar.dart';
@@ -20,8 +19,8 @@ class HomePage extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           const SliverToBoxAdapter(child: SizedBox(height: 16.0)),
-          SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          const SliverPadding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(child: GradientTextField()),
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 16.0)),

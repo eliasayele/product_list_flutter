@@ -14,7 +14,11 @@ class HorizontalPeopleList extends StatelessWidget {
           child: Text('골드 계급 사용자들이예요', style: TextStyle(fontSize: 12)),
         ),
         const ListTile(
-          title: Text('베스트 리뷰어⭐Top10', style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.w500)),
+          title: Text('베스트 리뷰어⭐Top10',
+              style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500)),
         ),
         SizedBox(
           height: 110.0,

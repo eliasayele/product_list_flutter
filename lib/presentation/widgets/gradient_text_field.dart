@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GradientTextField extends StatelessWidget {
-  GradientTextField({super.key});
-  var gradient = const LinearGradient(
+  const GradientTextField({super.key});
+  final gradient = const LinearGradient(
     colors: [Colors.blue, Colors.purple],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
